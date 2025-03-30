@@ -21,9 +21,3 @@
         @apply list-disc list-inside
     }
 }
-
-@layer components {
-    .project {
-        @apply my-2 py-3 px-5 border
-    }
-}
