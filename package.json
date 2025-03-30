@@ -1,17 +1,16 @@
 {
   "name": "wmdanor.github.io",
-  "version": "1.0.0",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "npm run watch:css & npm run watch:static",
-    "build": "npm run build:css -- -m",
-    "build:css": "npx @tailwindcss/cli -i ./input.css -o ./style.css",
-    "watch:css": "nodemon -L -e html,css -w index.html -w input.css -x \"npm run build:css\"",
-    "watch:static": "live-server"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "devDependencies": {
-    "@tailwindcss/cli": "^4.0.14",
-    "live-server": "^1.2.2",
-    "nodemon": "^3.1.9",
-    "tailwindcss": "^4.0.14"
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.17",
+    "astro": "^5.5.5",
+    "tailwindcss": "^4.0.17"
   }
 }
